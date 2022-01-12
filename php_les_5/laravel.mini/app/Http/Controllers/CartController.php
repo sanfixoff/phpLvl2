@@ -32,7 +32,6 @@ class CartController extends Controller
             'name' => $product->title,
             'price' => $product->new_price ? $product->new_price : $product->price,
             'quantity' => $request->quantity,
-            'test' => 'хуета',
             'attributes' => [
                 'img' => (isset($product->images[0]->img)) ? $product->images[0]->img : 'no_image.png'
             ]
